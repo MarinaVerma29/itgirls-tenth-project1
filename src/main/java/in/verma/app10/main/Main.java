@@ -1,7 +1,6 @@
 package in.verma.app10.main;
 import in.verma.app10.model.Account;
 import in.verma.app10.exception.WrongLoginException;
-
 import java.util.Scanner;
 
 public class Main {
@@ -14,11 +13,10 @@ public class Main {
 
             Account account = new Account();
             try{
-                account.checkLogin(loginUser);
+                account.checkLogin (loginUser);
                 System.out.println(account.getLogin());
             } catch (WrongLoginException exception){
                 exception.printStackTrace();
             }
-
         }
 }
